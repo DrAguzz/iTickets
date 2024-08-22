@@ -1,29 +1,37 @@
 <?php
 include('../backend/config.php');
-session_start();
 $msg="";
-
-if (isset($_POST["login"])) {
-    $id = $_POST['id'];
-    $password = $_POST['password'];
-
-    $query = mysqli_query($con,"SELECT * FROM admin WHERE id_admin='$id' AND katalaluan='$password'");
-
-    if (mysqli_num_rows($query)) {
-        $_SESSION['id_admin']=$id;
-
-        echo "
-        <script>
-        window.location.href='./dashboard.php?id=".$id."';
-        </script>
-        ";
+session_start();
+    if(isset($_POST["login"])){
+        $id = $_POST['id'];
+        $password = $_POST['password'];
+    
+        if (empty($id) || empty($password)) {
+            $_SESSION['title']='Gagal';
+            $_SESSION['icon']='error';
+            $_SESSION['text']='Sila Isi Form Terlebih Dahulu';
+        }
+    
+        $stmt = $pdo->prepare('SELECT * FROM admin WHERE id_admin= :id');
+        $stmt->execute(['id' => $id]);
+        $user = $stmt->fetch();
+    
+        if ($user && password_verify($password, $user['katalaluan'])) {
+            $password = $user['katalaluan'];
+            $_SESSION['id_admin']=$id;
+    
+            echo "
+            <script>
+            window.location.href='./dashboard.php?id=".$id."';
+            </script>
+            ";
+        } else {
+            $_SESSION['title']='Gagal';
+            $_SESSION['icon']='error';
+            $_SESSION['text']='Nama Pengguna atau Kata laluan anda salah';
+        }
     }
-    else{
-        $_SESSION['title']='Gagal';
-        $_SESSION['icon']='error';
-        $_SESSION['text']='Nama Pengguna atau Kata laluan anda salah';
-    }
-}
+?>
 ?>
 
 

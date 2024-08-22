@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../include/config.php');
+include('../backend/config.php');
 $get=$_REQUEST['id_admin'];
 
 $_SESSION['title']='Berjaya';

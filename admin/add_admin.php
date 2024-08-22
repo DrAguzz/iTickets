@@ -1,6 +1,7 @@
 <?php
-include('../include/config.php');
-include('../include/session_admin.php');
+include('../backend/config.php');
+include('../backend/redirectAdmin.php');
+
 
 //fetch admin data
 $query=mysqli_query($con,"SELECT * FROM admin WHERE id_admin='$id'");
@@ -33,11 +34,12 @@ if(isset($_POST['tambah'])){
         $_SESSION['location']='add_admin.php';
     }else{
         if($ps==$cps){
+            $pwh = password_hash($ps, PASSWORD_DEFAULT);
             $_SESSION['title']='Berjaya';
             $_SESSION['icon']='success';
             $_SESSION['text']='Pentadbir Berjaya Ditambah.';
             $_SESSION['location']='add_admin.php';
-            $query=mysqli_query($con,"INSERT INTO admin(id_admin, nama, katalaluan, notel, role) VALUES ('$id',UPPER('$name'),'$ps','$notel','$role')");
+            $query=mysqli_query($con,"INSERT INTO admin(id_admin, nama, katalaluan, nrtel, role) VALUES ('$id',UPPER('$name'),'$pwh','$notel','$role')");
         }else{
             // $msg ="
             // <p class='alert alert-danger'>
@@ -70,7 +72,8 @@ if(isset($_POST['tambah'])){
 </head>
 <body class="bg-light pt-4">
     <?php
-    include('../include/nav_admin.php');
+        include('../partials/_navbarAdmin.php');
+
     ?>
    
     <div class="container-fluid">
@@ -112,7 +115,7 @@ if(isset($_POST['tambah'])){
                             <select id="" name="role" class="form-select" required>
                                 <option value="" selected disabled>Sila Pilih</option>
                                 <option value="1">Exco Kebajikan Pelajar</option>
-                                <option value="2">Ahli Majlis Perwakilan Pelajar</option>
+                                <option value="0">Ahli Majlis Perwakilan Pelajar</option>
                             </select>
                         </div>
                     </div>
