@@ -1,7 +1,7 @@
 <?php
 include('config.php');
 session_start();
-
+//TEST
 if(isset($_POST['register'])){
     $name=filter_input(INPUT_POST,'name',FILTER_SANITIZE_SPECIAL_CHARS);
     $nric=filter_input(INPUT_POST,'nric',FILTER_SANITIZE_NUMBER_INT);

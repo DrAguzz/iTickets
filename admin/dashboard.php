@@ -13,7 +13,8 @@ $getStat=mysqli_fetch_array($fetchStat);
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>ITket KVKS</title>
+    <title>iTicket KVKS</title>
+    <link rel="shortcut icon" href="../images/icon.png" />
     <!-- base:css -->
     <link rel="stylesheet" href="../vendors/typicons.font/font/typicons.css">
     <link rel="stylesheet" href="../vendors/css/vendor.bundle.base.css">

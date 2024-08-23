@@ -3,8 +3,8 @@ include('../backend/config.php');
 $msg="";
 session_start();
     if(isset($_POST["login"])){
-        $id = $_POST['id'];
-        $password = $_POST['password'];
+        $id=filter_input(INPUT_POST,'id',FILTER_SANITIZE_SPECIAL_CHARS);
+        $password=filter_input(INPUT_POST,'password',FILTER_SANITIZE_SPECIAL_CHARS);;
     
         if (empty($id) || empty($password)) {
             $_SESSION['title']='Gagal';
