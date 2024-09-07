@@ -33,7 +33,7 @@
                 $_SESSION['text']='Pentadbir Berjaya Ditambah.';
                 $_SESSION['location']= "$path/admin/add_admin.php";
                 $query=mysqli_query($con,"INSERT INTO admin(id_admin, nama, katalaluan, nrtel, role) VALUES ('$id',UPPER('$name'),'$pwh','$notel','$role')");
-                $_SESSION['location']= "$path/admin/add_admin.php";
+                $_SESSION['location']= "add_admin.php";
 
             }else{
                 // $msg ="
