@@ -2,9 +2,9 @@
 require('../backend/config.php');
 include('../backend/redirectAdmin.php');
 
-$get=$_REQUEST['id'];
-$query=mysqli_query($con, "SELECT * FROM vehicles WHERE id_vehicle=$get");
-$fetch=mysqli_fetch_array($query);
+// $get=$_REQUEST['id'];
+// $query=mysqli_query($con, "SELECT * FROM vehicles WHERE id_vehicle=$get");
+// $fetch=mysqli_fetch_array($query);
 
 if(isset($_POST['submit'])){
   $nokp=$_POST['nokp'];

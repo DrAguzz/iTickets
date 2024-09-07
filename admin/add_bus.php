@@ -5,19 +5,6 @@ include('../backend/redirectAdmin.php');
 //fetch admin data
 $query=mysqli_query($con,"SELECT * FROM admin WHERE id_admin='$id'");
 $fetch=mysqli_fetch_array($query);
-
-if(isset($_POST['tambah'])){
-    $jenis=$_POST['jenis'];
-    $date=$_POST['date'];
-
-    if($jenis=="Bas"){
-        $seat='40';
-    }else if($jenis=="Van"){
-        $seat='10';
-    }
-
-    $query=mysqli_query($con, "INSERT INTO vehicles VALUES (NULL,'$jenis','$date','$seat')");
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,7 +33,7 @@ if(isset($_POST['tambah'])){
         <div class="row p-3 d-flex justify-content-center">
             <div class="col-xl-5 container border bg-white p-2 rounded-3 mb-3 shadow-sm">
                 <br>
-                <form method="POST">
+                <form method="POST" action="../backend/admin/add_bus.php">
                     <div class="row">
                         <div class="col mb-2"> 
                             <label class="form-label">Kenderaan</label>
