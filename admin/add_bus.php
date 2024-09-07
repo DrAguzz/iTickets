@@ -128,7 +128,7 @@ $fetch=mysqli_fetch_array($query);
             cancelButtonColor: '#dc3545'
         }).then((result) =>{
             if(result.isConfirmed){
-                window.location.href='delete_bus.php?id='+id;
+                window.location.href='../backend/admin/delete_bus.php?id='+id;
             }
         });
     });
