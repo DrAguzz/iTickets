@@ -1,6 +1,9 @@
 <?php
 include('../backend/config.php');
 include('../backend/redirectAdmin.php');
+include("../backend/admin/add_admin.php");
+
+
 
 
 //fetch admin data
@@ -9,53 +12,7 @@ $fetch=mysqli_fetch_array($query);
 
 // $msg="";
 
-if(isset($_POST['tambah'])){
-    $id=$_POST['id'];
-    $name=$_POST['name'];
-    $notel=$_POST['notel'];
-    $role=$_POST['role'];
-    $ps=$_POST['ps'];
-    $cps=$_POST['cps'];
 
-    $query1=mysqli_query($con,"SELECT * FROM admin WHERE id_admin='$id'");
-
-    if(mysqli_num_rows($query1)==1){
-        // $msg ="
-        //     <p class='alert alert-danger'>
-        //     <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-exclamation-triangle-fill' viewBox='0 0 16 16'>
-        //     <path d='M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/>
-        //     </svg>
-        //     Nama Pengguna Sudah Wujud.
-        //     </p>
-        //     ";
-        $_SESSION['title']='Gagal';
-        $_SESSION['icon']='error';
-        $_SESSION['text']='Nama Pentadbir Sudah Wujud.';
-        $_SESSION['location']='add_admin.php';
-    }else{
-        if($ps==$cps){
-            $pwh = password_hash($ps, PASSWORD_DEFAULT);
-            $_SESSION['title']='Berjaya';
-            $_SESSION['icon']='success';
-            $_SESSION['text']='Pentadbir Berjaya Ditambah.';
-            $_SESSION['location']='add_admin.php';
-            $query=mysqli_query($con,"INSERT INTO admin(id_admin, nama, katalaluan, nrtel, role) VALUES ('$id',UPPER('$name'),'$pwh','$notel','$role')");
-        }else{
-            // $msg ="
-            // <p class='alert alert-danger'>
-            // <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-exclamation-triangle-fill' viewBox='0 0 16 16'>
-            // <path d='M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/>
-            // </svg>
-            // Kata Laluan Tidak Sepadan
-            // </p>
-            // ";
-            $_SESSION['title']='Gagal';
-            $_SESSION['icon']='error';
-            $_SESSION['text']='Kata Laluan Tidak Sepadan.';
-            $_SESSION['location']='add_admin.php';
-        }
-    }
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -134,20 +91,19 @@ if(isset($_POST['tambah'])){
                     <center>
                         <button type="submit" name="tambah" class="btn btn-primary rounded-2 mt-3 p-2" style="width: 100%;">Tambah</button>
                     </center>
-                </form>
-            </div>
-            <div class="col-xl-5 container border bg-white p-2 rounded-3 mb-3 shadow-sm table-responsive">
-                <table id="dataTableAdmin" class="table">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>NAMA</th>
-                            <th>PERANAN</th>
-                            <th>TINDAKAN</th>
+                </div>
+                <div class="col-xl-5 container border bg-white p-2 rounded-3 mb-3 shadow-sm table-responsive">
+                    <table id="dataTableAdmin" class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>NAMA</th>
+                                <th>PERANAN</th>
+                                <th>TINDAKAN</th>
                         </tr>
                     </thead>
                     <tbody>
-                    <?php
+                        <?php
                     $query=mysqli_query($con,"SELECT * FROM admin WHERE role!='0'");
                     while($data=mysqli_fetch_array($query)){
                     ?>
@@ -166,11 +122,12 @@ if(isset($_POST['tambah'])){
                         <td class="text-center">
                             <a class="btn btn-danger delete" data-id="<?=$data['id_admin'];?>">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                    <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
                                 </svg>
                             </a>
                         </td>
                     </tr>
+                    </form>
                     <?php 
                     }
                     ?>
@@ -204,7 +161,7 @@ if(isset($_POST['tambah'])){
             cancelButtonColor: '#dc3545'
         }).then((result) =>{
             if(result.isConfirmed){
-                window.location.href='delete_admin.php?id_admin='+id;
+                window.location.href='../backend/admin/delete_admin.php?id_admin='+id;
             }
         });
     });
