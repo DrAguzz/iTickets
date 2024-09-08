@@ -1,42 +1,11 @@
 <?php
 require('../backend/config.php');
 include('../backend/redirectAdmin.php');
+include('../backend/admin/add_passenger.php');
 
 $get=$_REQUEST['id'];
 $query=mysqli_query($con, "SELECT * FROM vehicles WHERE id_vehicle=$get");
 $fetch=mysqli_fetch_array($query);
-
-if(isset($_POST['submit'])){
-  $nokp=$_POST['nokp'];
-
-  $check=mysqli_query($con,"SELECT * FROM users WHERE nric='$nokp'");
-
-  if(mysqli_num_rows($check)>0){
-    $take=mysqli_fetch_array($check);
-    $id_std=$take['id_user'];
-    $check1=mysqli_query($con,"SELECT * FROM tickets WHERE id_tkt='$id_std'");
-
-    if(mysqli_num_rows($check1)>0){
-      $_SESSION['title']='Gagal Ditambah';
-      $_SESSION['icon']='error';
-      $_SESSION['text']='Pelajar sudah menempah tiket';
-      $_SESSION['location']='add_bus.php';
-    }else{
-      $id=$_POST['id_vehicle'];
-      $method=$_POST['method'];
-      $query=mysqli_query($con,"INSERT INTO  tickets(id_vehicle, id_user, method) VALUES ('$id', '$id_std','$method')");
-      $_SESSION['title']='Berjaya Ditempah';
-      $_SESSION['icon']='success';
-      $_SESSION['text']='Berjaya menambah penumpang';
-      $_SESSION['location']='add_bus.php';
-    }
-  }else{
-    $_SESSION['title']='Gagal';
-    $_SESSION['icon']='error';
-    $_SESSION['text']='Pelajar belum mendaftar TicketEase';
-    $_SESSION['location']='add_bus.php';
-  }
-}
 ?>
 <!DOCTYPE html>
 <html>
@@ -105,6 +74,8 @@ if(isset($_POST['submit'])){
       </form>
     </div>
   </div>
+  <?php include('../partials/_footerAdmin.php');?>
+
 </body>
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

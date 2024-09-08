@@ -1,6 +1,7 @@
 <?php
 require('../backend/config.php');
 include('../backend/redirectAdmin.php');
+// include_once('../backend/admin/done.php');
 
 $fetchStat=mysqli_query($con,"SELECT COUNT(id_tkt) AS purchased_amount, SUM(amount) AS ticket_amount, COUNT(CASE WHEN status='1' THEN 1 END) AS done, COUNT(CASE WHEN status='2' THEN 1 END) AS cancel FROM tickets");
 $getStat=mysqli_fetch_array($fetchStat);
@@ -228,7 +229,7 @@ $getStat=mysqli_fetch_array($fetchStat);
                 cancelButtonColor: '#dc3545'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    window.location.href = '../backend/done.php?id='+id;
+                    window.location.href = '../backend/admin/done.php?id='+id;
                 }
             });
         });
@@ -246,7 +247,7 @@ $getStat=mysqli_fetch_array($fetchStat);
                 cancelButtonColor: '#dc3545'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    window.location.href = '../backend/cancel.php?id='+id;
+                    window.location.href = '../backend/admin/cancel.php?id='+id;
                 }
             });
         });

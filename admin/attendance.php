@@ -90,7 +90,8 @@ include("../backend/admin/attendance.php");
         </div>
 
         <br><br>
-        <?php include('../partials/_footer.php'); ?>
+        <?php include('../partials/_footerAdmin.php');?>
+
     </div>
 </body>
 

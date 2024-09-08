@@ -104,7 +104,7 @@ $fetch=mysqli_fetch_array($query);
         </div>
 
         <br><br>
-        <?php include('footer.php');?>
+        <?php include('../partials/_footerAdmin.php');?>
     </div>
 </body>
 

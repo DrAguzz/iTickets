@@ -226,7 +226,7 @@
               ?>
             </div>
             
-            <a href="../admin/logout.php" class="nav_link">
+            <a href="../backend/admin/logout.php" class="nav_link">
               <i class='bx bx-log-out nav_icon'></i>
               <span class="nav_name">Log Keluar</span>
             </a>
