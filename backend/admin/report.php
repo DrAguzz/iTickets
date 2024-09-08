@@ -1,5 +1,5 @@
 <?php
-include('../backend/config.php');
+include('../config.php');
 
 $query = mysqli_query($con, "SELECT tickets.*, users.*, programs.*, vehicles.*, vehicles.date 
                              FROM tickets 
@@ -12,7 +12,7 @@ if (!$query) {
     die('Error: ' . mysqli_error($con));
 }
 
-require "../vendors/autoload.php";
+require "../../vendors/autoload.php";
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
@@ -21,7 +21,7 @@ use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 $fetch = mysqli_fetch_array($query, MYSQLI_ASSOC);
 $fileDate = isset($fetch['date']) ? date('d-m-Y', strtotime($fetch['date'])) : date('d-m-Y');
 
-$file = 'LAPORAN PELAJAR PULANG(' . $fileDate . ').xlsx';
+$file = 'LAPORAN PELAJAR PULANG(' . $fileDate . ').Xlsx';
 $spreadsheet = new Spreadsheet();
 $activeWorksheet = $spreadsheet->getActiveSheet();
 

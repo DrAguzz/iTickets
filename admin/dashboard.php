@@ -1,7 +1,7 @@
 <?php
 require('../backend/config.php');
 include('../backend/redirectAdmin.php');
-// include_once('../backend/admin/done.php');
+// include('../backend/admin/done.php');
 
 $fetchStat=mysqli_query($con,"SELECT COUNT(id_tkt) AS purchased_amount, SUM(amount) AS ticket_amount, COUNT(CASE WHEN status='1' THEN 1 END) AS done, COUNT(CASE WHEN status='2' THEN 1 END) AS cancel FROM tickets");
 $getStat=mysqli_fetch_array($fetchStat);
