@@ -98,7 +98,7 @@ include('../backend/redirect.php');
                                                     <?php if ($availableSeat > 0): ?>
                                                             <button type="button" class="btn btn-sm btn-secondary" onclick="window.location='payment.php?id=<?=$fetchBus['id_vehicle']?>'">Beli</button>
                                                     <?php else: ?>
-                                                        <button type="button" class="btn btn-sm btn-danger" disabled>Dijual</button>
+                                                        <button type="button" class="btn btn-sm btn-danger" disabled>Penuh</button>
                                                     <?php endif; ?>
                                                     </td>
                                                 </tr>

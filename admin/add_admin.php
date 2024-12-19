@@ -73,7 +73,7 @@ $fetch=mysqli_fetch_array($query);
                             <select id="" name="role" class="form-select" required>
                                 <option value="" selected disabled>Sila Pilih</option>
                                 <option value="1">Exco Kebajikan Pelajar</option>
-                                <option value="0">Ahli Majlis Perwakilan Pelajar</option>
+                                <option value="0">AMT Majlis Perwakilan Pelajar</option>
                             </select>
                         </div>
                     </div>
@@ -104,7 +104,7 @@ $fetch=mysqli_fetch_array($query);
                     </thead>
                     <tbody>
                         <?php
-                    $query=mysqli_query($con,"SELECT * FROM admin WHERE role!='0'");
+                    $query=mysqli_query($con,"SELECT * FROM admin");
                     while($data=mysqli_fetch_array($query)){
                     ?>
                     <tr>
@@ -137,7 +137,7 @@ $fetch=mysqli_fetch_array($query);
         </div>
         
         <br><br>
-        <?php include('footer.php');?>
+        <?php include('../partials/_footerAdmin.php');?>
     </div>
 </body>
 

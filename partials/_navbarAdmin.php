@@ -212,7 +212,7 @@
                 </a>
               </div>
               <?php
-              }else if($fetchAdmin['role']==1){
+              }
               ?>
             <!-- pelajar -->
               <div class="nav_list">
@@ -221,9 +221,6 @@
                   <span class="nav_name">Tambah Kenderaan</span> 
                 </a>
               </div>
-              <?php
-              }
-              ?>
             </div>
             
             <a href="../backend/admin/logout.php" class="nav_link">

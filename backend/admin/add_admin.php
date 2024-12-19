@@ -1,47 +1,41 @@
 <?php
-if(isset($_POST['tambah'])){
-    $id=$_POST['id'];
-    $name=$_POST['name'];
-    $notel=$_POST['notel'];
-    $role=$_POST['role'];
-    $ps=$_POST['ps'];
-    $cps=$_POST['cps'];
+if (isset($_POST['tambah'])) {
+    $id = trim($_POST['id']);
+    $name = trim($_POST['name']);
+    $notel = trim($_POST['notel']);
+    $role = trim($_POST['role']);
+    $ps = $_POST['ps'];
+    $cps = $_POST['cps'];
 
-    $query1=mysqli_query($con,"SELECT * FROM admin WHERE id_admin='$id'");
+    $query1 = mysqli_query($con, "SELECT * FROM admin WHERE id_admin='$id'");
 
-    if(mysqli_num_rows($query1)==1){
-        // $msg ="
-        //     <p class='alert alert-danger'>
-        //     <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-exclamation-triangle-fill' viewBox='0 0 16 16'>
-        //     <path d='M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/>
-        //     </svg>
-        //     Nama Pengguna Sudah Wujud.
-        //     </p>
-        //     ";
-        $_SESSION['title']='Gagal';
-        $_SESSION['icon']='error';
-        $_SESSION['text']='Nama Pentadbir Sudah Wujud.';
-        $_SESSION['location']='add_admin.php';
-    }else{
-        if($ps==$cps){
-            $_SESSION['title']='Berjaya';
-            $_SESSION['icon']='success';
-            $_SESSION['text']='Pentadbir Berjaya Ditambah.';
-            $_SESSION['location']='add_admin.php';
-            $query=mysqli_query($con,"INSERT INTO admin(id_admin, nama, katalaluan, nrtel, role) VALUES ('$id',UPPER('$name'),'$ps','$notel','$role')");
-        }else{
-            // $msg ="
-            // <p class='alert alert-danger'>
-            // <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-exclamation-triangle-fill' viewBox='0 0 16 16'>
-            // <path d='M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/>
-            // </svg>
-            // Kata Laluan Tidak Sepadan
-            // </p>
-            // ";
-            $_SESSION['title']='Gagal';
-            $_SESSION['icon']='error';
-            $_SESSION['text']='Kata Laluan Tidak Sepadan.';
-            $_SESSION['location']='add_admin.php';
+    if (mysqli_num_rows($query1) > 0) {
+        $_SESSION['title'] = 'Gagal';
+        $_SESSION['icon'] = 'error';
+        $_SESSION['text'] = 'Nama Pentadbir Sudah Wujud.';
+        $_SESSION['location'] = 'add_admin.php';
+    } else {
+        if ($ps === $cps) {
+            $hashedPassword = password_hash($ps, PASSWORD_DEFAULT);
+
+            $query = mysqli_query($con, "INSERT INTO admin (id_admin, nama, katalaluan, nrtel, role) VALUES ('$id', UPPER('$name'), '$hashedPassword', '$notel', '$role')");
+
+            if ($query) {
+                $_SESSION['title'] = 'Berjaya';
+                $_SESSION['icon'] = 'success';
+                $_SESSION['text'] = 'Pentadbir Berjaya Ditambah.';
+                $_SESSION['location'] = 'add_admin.php';
+            } else {
+                $_SESSION['title'] = 'Gagal';
+                $_SESSION['icon'] = 'error';
+                $_SESSION['text'] = 'Ralat Semasa Menambah Pentadbir.';
+                $_SESSION['location'] = 'add_admin.php';
+            }
+        } else {
+            $_SESSION['title'] = 'Gagal';
+            $_SESSION['icon'] = 'error';
+            $_SESSION['text'] = 'Kata Laluan Tidak Sepadan.';
+            $_SESSION['location'] = 'add_admin.php';
         }
     }
 }

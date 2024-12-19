@@ -6,7 +6,7 @@ $query=mysqli_query($con,"SELECT * FROM admin WHERE id_admin='$id'");
 $fetch=mysqli_fetch_array($query);
 
 $get=$_REQUEST['id'];
-$query2=mysqli_query($con,"SELECT * FROM tickets JOIN users ON users.id_user - tickets.id_tkt JOIN programs ON users.id_user - programs.id_program WHERE users.id_user='$get'");
+$query2=mysqli_query($con,"SELECT * FROM tickets JOIN users ON users.id_user - tickets.id_tkt JOIN programs ON users.id_program = programs.id_program WHERE users.id_user='$get'");
 $fetch2=mysqli_fetch_array($query2); 
 ?>
 <!DOCTYPE html>
@@ -74,7 +74,7 @@ $fetch2=mysqli_fetch_array($query2);
             <br>
 
             <table class="table">
-            `   <tr>
+              <tr>
                     <th class="col-3">Nama Bapa</th>
                     <td>:</td>
                     <td><?php echo $fetch2['name_father']?></td>
