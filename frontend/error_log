@@ -1,0 +1,512 @@
+[02-Jan-2026 17:11:15 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:11:15 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:11:15 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:11:15 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:11:15 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:11:15 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:11:22 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:11:22 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:11:22 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:11:22 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:11:22 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:11:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:11:28 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:11:28 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:11:28 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:11:28 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:11:28 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:11:28 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:12:18 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:12:18 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:12:18 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:12:18 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:12:18 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:12:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:12:18 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:12:18 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:12:18 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:12:18 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:12:18 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:12:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:12:26 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:12:26 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:12:26 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:12:26 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:12:26 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:12:26 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:12:27 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:12:27 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:12:27 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:12:27 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:12:27 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:12:27 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:13:57 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:13:57 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:13:57 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:13:57 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:13:57 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:13:57 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:13:58 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:13:58 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:13:58 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:13:58 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:13:58 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:13:58 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:14:07 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:14:07 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:14:07 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:14:07 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:14:07 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:14:07 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:14:13 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:14:13 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:14:13 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:14:13 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:14:13 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:14:13 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:14:21 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:14:21 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:14:21 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:14:21 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:14:21 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:14:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:14:22 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:14:22 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:14:22 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:14:22 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:14:22 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:14:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:14:27 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:14:27 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:14:27 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:14:27 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:14:27 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:14:27 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:14:32 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:14:32 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:14:32 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:14:32 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:14:32 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:14:32 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:14:32 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:14:32 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:14:32 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:14:32 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:14:32 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:14:32 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:14:39 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:14:39 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:14:39 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:14:39 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:14:39 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:14:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:14:39 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:14:39 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:14:39 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:14:39 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:14:39 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:14:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:14:43 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:14:43 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:14:43 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:14:43 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:14:43 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:14:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:14:51 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:14:51 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:14:51 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:14:51 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:14:51 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:14:51 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:14:52 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:14:52 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:14:52 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:14:52 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:14:52 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:14:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:14:55 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:14:55 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:14:55 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:14:55 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:14:55 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:14:55 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:16:38 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:16:38 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:16:38 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:16:38 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:16:38 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:16:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:16:48 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:16:48 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:16:48 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:16:48 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:16:48 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:16:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:18:53 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:18:53 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:18:53 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:18:53 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:18:53 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:18:53 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:19:06 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:19:06 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:19:06 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:19:06 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:19:06 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:19:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:20:15 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:20:15 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:20:15 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:20:15 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:20:15 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:20:15 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:31:37 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:31:37 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:31:37 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:31:37 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:31:37 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:31:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:31:37 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:31:37 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:31:37 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:31:37 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:31:37 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:31:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:31:45 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:31:45 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:31:45 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:31:45 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:31:45 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:31:45 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:31:45 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:31:45 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:31:45 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:31:45 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:31:45 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:31:45 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:31:55 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:31:55 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:31:55 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:31:55 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:31:55 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:31:55 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:31:55 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:31:55 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:31:55 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:31:55 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:31:55 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:31:55 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:32:06 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:32:06 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:32:06 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:32:06 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:32:06 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:32:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:32:06 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:32:06 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:32:06 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:32:06 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:32:06 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:32:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:32:19 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:32:19 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:32:19 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:32:19 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:32:19 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:32:19 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:32:19 UTC] PHP Warning:  file_get_contents(/home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/.env): Failed to open stream: No such file or directory in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 2
+[02-Jan-2026 17:32:19 UTC] PHP Warning:  Undefined array key "HOSTNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 3
+[02-Jan-2026 17:32:19 UTC] PHP Warning:  Undefined array key "USERNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 4
+[02-Jan-2026 17:32:19 UTC] PHP Warning:  Undefined array key "PASSWORD" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 5
+[02-Jan-2026 17:32:19 UTC] PHP Warning:  Undefined array key "DBNAME" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 6
+[02-Jan-2026 17:32:19 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:52:49 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'kvkualas_KVKSadmin'@'localhost' to database 'kvkualas_itickets' in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 17:53:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'kvkualas_KVKSadmin'@'localhost' to database 'kvkualas_itickets' in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:8
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(8): mysqli_connect()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/login.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 8
+[02-Jan-2026 18:08:17 UTC] PHP Warning:  Undefined variable $con in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php on line 9
+[02-Jan-2026 18:08:17 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php:9
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php(9): mysqli_query()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/dashboard.php(3): include('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php on line 9
+[02-Jan-2026 18:10:36 UTC] PHP Warning:  Undefined variable $con in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/register.php on line 50
+[02-Jan-2026 18:10:36 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/register.php:50
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/register.php(50): mysqli_query()
+#1 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/register.php on line 50
+[02-Jan-2026 18:12:28 UTC] PHP Warning:  Undefined variable $con in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php on line 9
+[02-Jan-2026 18:12:28 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php:9
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php(9): mysqli_query()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/dashboard.php(3): include('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php on line 9
+[02-Jan-2026 18:15:20 UTC] PHP Warning:  Undefined variable $con in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php on line 9
+[02-Jan-2026 18:15:20 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php:9
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php(9): mysqli_query()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/dashboard.php(3): include('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php on line 9
+[02-Jan-2026 18:17:31 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:29:27 UTC] PHP Warning:  Undefined variable $con in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php on line 9
+[02-Jan-2026 18:29:27 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php:9
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php(9): mysqli_query()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/detailticket.php(3): include('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php on line 9
+[02-Jan-2026 18:29:42 UTC] PHP Warning:  Undefined variable $con in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php on line 9
+[02-Jan-2026 18:29:42 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php:9
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php(9): mysqli_query()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/detailticket.php(3): include('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php on line 9
+[02-Jan-2026 18:29:43 UTC] PHP Warning:  Undefined variable $con in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php on line 9
+[02-Jan-2026 18:29:43 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php:9
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php(9): mysqli_query()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/detailticket.php(3): include('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php on line 9
+[02-Jan-2026 18:30:49 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:32:56 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:32:57 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:32:57 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:32:57 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:32:58 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:32:58 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:32:59 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:32:59 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:32:59 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:32:59 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:32:59 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:33:00 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:33:00 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:33:00 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:33:00 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:33:00 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:33:01 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:33:01 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 18:33:48 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 19:43:13 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 19:59:58 UTC] PHP Warning:  Undefined variable $con in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php on line 9
+[02-Jan-2026 19:59:58 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php:9
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php(9): mysqli_query()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php(3): include('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/redirect.php on line 9
+[02-Jan-2026 20:00:10 UTC] PHP Warning:  Undefined variable $charset in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 18
+[02-Jan-2026 20:00:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[00000] [2019] Can't initialize character set  (path: compiled_in) in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php:24
+Stack trace:
+#0 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php(24): PDO->__construct()
+#1 /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php(2): require('/home12/kvkuala...')
+#2 {main}
+  thrown in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/backend/config.php on line 24
+[02-Jan-2026 20:00:32 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 20:02:03 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18
+[02-Jan-2026 20:02:03 UTC] PHP Warning:  Undefined variable $fetchAcc in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/partials/_navbar.php on line 12
+[02-Jan-2026 20:02:03 UTC] PHP Warning:  Trying to access array offset on null in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/partials/_navbar.php on line 12
+[02-Jan-2026 20:02:03 UTC] PHP Warning:  Undefined variable $fetchAcc in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/partials/_sidebar.php on line 10
+[02-Jan-2026 20:02:03 UTC] PHP Warning:  Trying to access array offset on null in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/partials/_sidebar.php on line 10
+[02-Jan-2026 20:02:03 UTC] PHP Warning:  Undefined variable $fetchAcc in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/partials/_sidebar.php on line 39
+[02-Jan-2026 20:02:03 UTC] PHP Warning:  Trying to access array offset on null in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/partials/_sidebar.php on line 39
+[02-Jan-2026 20:08:40 UTC] PHP Warning:  Undefined array key "qr_code" in /home12/kvkualas/public_html/itickets.kvkualaselangor.com/frontend/paymenttng.php on line 18

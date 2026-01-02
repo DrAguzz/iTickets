@@ -68,7 +68,7 @@ include('../backend/redirect.php');
                                 <div class="card-body">
                                     <h5 class="card-title mb-3">QR Code Pembayaran</h5>
                                     <!-- qr code pembayaran  -->
-                                    <img src="../images/qrcodes/<?= $row['qr_name'] ?>" class="w-100" alt="QR Code Touch n Go">
+                                    <img src="../images/qrcodes/<?= $row['qr_image'] ?>" class="w-100" alt="QR Code Touch n Go">
                                     <div class="mt-3">
                                         <p class="mb-1"><strong>Cara Bayar:</strong></p>
                                         <ol class="small">

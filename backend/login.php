@@ -1,4 +1,13 @@
 <?php
+error_reporting(0);
+// Source - https://stackoverflow.com/q
+// Posted by Abs, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-01-03, License - CC BY-SA 4.0
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+
 require('config.php');
 session_start();
 

@@ -1,23 +1,19 @@
 <?php
-$con=mysqli_connect('localhost','root','','kvkualas_bas')or die();
 
-// Database connection
-$host = 'localhost';
-$db   = 'kvkualas_bas';
-$user = 'root';
-$pass = '';
-$charset = 'utf8mb4';
+// Source - https://stackoverflow.com/q
+// Posted by Abs, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-01-03, License - CC BY-SA 4.0
 
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-$options = [
-    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    PDO::ATTR_EMULATE_PREPARES   => false,
-];
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-try {
-    $pdo = new PDO($dsn, $user, $pass, $options); // Establishing the connection
-} catch (\PDOException $e) {
-    die("Could not connect to the database. Please check your connection settings.");
-}
+$env = parse_ini_string(file_get_contents(__DIR__.'/.env'));
+$SERVER = $env['HOSTNAME'];
+$USER = $env['USERNAME'];
+$PSWD = $env['PASSWORD'];
+$DB = $env['DBNAME'];
+
+$con = mysqli_connect($SERVER, $USER, $PSWD, $DB);
+
+
 ?>
