@@ -30,15 +30,14 @@ $matrixPointSize = 10; // 1 to 10
     $mail = new PHPMailer(true);
 
     $mail->isSMTP();
-    $mail->SMTPDebug = 0;
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'muhammadsyahmi422@gmail.com';
-    $mail->Password = 'jhes rclp ftzq erxj';
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port = 465;
+    $mail->Username = 'erfanbagus06@gmail.com';
+    $mail->Password = 'echfgegaxlgadryo';
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 587;
     
-    $mail->setFrom('test@ticketease.com', 'TicketEase KVKS'); 
+    $mail->setFrom('erfanbagus06@gmail.com', 'TicketEase KVKS'); 
 
     $mail->addAddress($fetch['email']);
     

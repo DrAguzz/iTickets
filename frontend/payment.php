@@ -1,9 +1,36 @@
 <?php
 require('../backend/config.php');
 include('../backend/redirect.php');
-$idBus=$_REQUEST['id'];
-$getStat=mysqli_query($con,"SELECT * FROM vehicles WHERE id_vehicle='$idBus'");
-$fetchStat=mysqli_fetch_array($getStat);
+
+// Validate and sanitize ID
+$idBus = isset($_REQUEST['id']) ? intval($_REQUEST['id']) : 0;
+
+if($idBus <= 0){
+    header('Location: dashboard.php');
+    exit();
+}
+
+// Use prepared statement
+$stmt = $con->prepare("SELECT * FROM vehicles WHERE id_vehicle = ?");
+$stmt->bind_param("i", $idBus);
+$stmt->execute();
+$result = $stmt->get_result();
+$fetchStat = $result->fetch_assoc();
+
+if(!$fetchStat){
+    $_SESSION['title'] = 'Ralat';
+    $_SESSION['icon'] = 'error';
+    $_SESSION['text'] = 'Kenderaan tidak dijumpai';
+    header('Location: dashboard.php');
+    exit();
+}
+
+// Check if user already has active ticket
+$stmt_check = $con->prepare("SELECT * FROM tickets WHERE id_user = ? AND status IN ('0', '1')");
+$stmt_check->bind_param("i", $fetchAcc['id_user']);
+$stmt_check->execute();
+$result_check = $stmt_check->get_result();
+$hasActiveTicket = $result_check->num_rows > 0;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,6 +72,19 @@ $fetchStat=mysqli_fetch_array($getStat);
              
             <div class="main-panel">        
                 <div class="content-wrapper">
+                    <?php if($hasActiveTicket): ?>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="alert alert-warning" role="alert">
+                                <i class='bx bx-error-circle'></i>
+                                <strong>Perhatian!</strong> Anda sudah mempunyai tiket aktif. Setiap pelajar hanya dibenarkan membeli satu tiket sahaja.
+                            </div>
+                            <a href="dashboard.php" class="btn btn-secondary">
+                                <i class='bx bx-arrow-back'></i> Kembali ke Dashboard
+                            </a>
+                        </div>
+                    </div>
+                    <?php else: ?>
                     <div class="row">
                         <div class="col-lg-4 d-flex grid-margin stretch-card">
                             <div class="card">
@@ -52,9 +92,13 @@ $fetchStat=mysqli_fetch_array($getStat);
                                     <div class="d-flex flex-wrap justify-content-between">
                                         <h4 class="card-title mb-3">Butiran</h4>
                                     </div>
-                                    <div class="d-flex justify-content-between mb-4  mt-3">
+                                    <div class="d-flex justify-content-between mb-4 mt-3">
                                         <div>Pengangkutan</div>
-                                        <div class="text-muted"><?=$fetchStat['type']?></div>
+                                        <div class="text-muted"><?=htmlspecialchars($fetchStat['type'])?></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <div>Nama</div>
+                                        <div class="text-muted"><?=htmlspecialchars($fetchStat['type'])?></div>
                                     </div>
                                     <div class="d-flex justify-content-between mb-4">
                                         <div>Tarikh Bertolak</div>
@@ -63,7 +107,7 @@ $fetchStat=mysqli_fetch_array($getStat);
                                     <hr>
                                     <div class="d-flex justify-content-between mb-4">
                                         <div class="font-weight-bold">Jumlah</div>
-                                        <div class="font-weight-bold">RM 15</div>
+                                        <div class="font-weight-bold">RM <?=number_format($fetchStat['price'] ?? 15, 2)?></div>
                                     </div>
                                 </div>
                             </div>
@@ -77,31 +121,50 @@ $fetchStat=mysqli_fetch_array($getStat);
                                     <p class="card-description">
                                         Pilih kaedah pembayaran
                                     </p>
-                                    <form action="../backend/payment.php" method="post">
-                                        <div class="form-group row">
-                                            <div class="col">
-                                                <input type="hidden" name="id_user" value="<?=$fetchAcc['id_user']?>">
-                                                <input type="hidden" name="id_vehicle" value="<?=$idBus?>">
-                                                <div class="form-check form-check-secondary">
-                                                    <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input" value="Tunai" name="method" required>
-                                                    Tunai
-                                                    </label>
-                                                </div>
-                                                <div class="form-check form-check-secondary">
-                                                    <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input" value="Touch n Go" name="method" required>
-                                                    Touch n' Go
-                                                    </label>
-                                                </div>
-                                                <button type="submit" class="btn btn-secondary mt-3" name="submit">Hantar</button>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    <form action="../backend/payment.php" method="post" id="paymentForm">
+    <input type="hidden" name="id_user" value="<?=$fetchAcc['id_user']?>">
+    <input type="hidden" name="id_vehicle" value="<?=$idBus?>">
+    
+    <div class="card mb-3">
+        <div class="card-body">
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="method" id="cash" value="Tunai" required style="width: 20px; height: 20px;">
+                <label class="form-check-label ml-2" for="cash" style="font-size: 16px;">
+                    <i class='bx bx-money' style="font-size: 24px; vertical-align: middle;"></i>
+                    <strong>Tunai</strong>
+                    <br>
+                    <small class="text-muted ml-4">Bayar terus kepada pemandu bas</small>
+                </label>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card mb-3">
+        <div class="card-body">
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="method" id="tng" value="Touch n Go" required style="width: 20px; height: 20px;">
+                <label class="form-check-label ml-2" for="tng" style="font-size: 16px;">
+                    <i class='bx bx-wallet' style="font-size: 24px; vertical-align: middle;"></i>
+                    <strong>Touch n' Go</strong>
+                    <br>
+                    <small class="text-muted ml-4">Bayar melalui Touch n Go eWallet</small>
+                </label>
+            </div>
+        </div>
+    </div>
+    
+    <button type="submit" class="btn btn-secondary btn-lg" name="submit">
+        <i class='bx bx-check-circle'></i> Teruskan
+    </button>
+    <a href="dashboard.php" class="btn btn-light btn-lg ml-2">
+        <i class='bx bx-x-circle'></i> Batal
+    </a>
+</form>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <?php endif; ?>
                 </div>
                 <!-- content-wrapper ends -->
 
@@ -137,6 +200,14 @@ $fetchStat=mysqli_fetch_array($getStat);
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+        function confirmPurchase() {
+            const method = document.querySelector('input[name="method"]:checked');
+            if(method && method.value === 'Tunai') {
+                return confirm('Adakah anda pasti untuk membeli tiket tunai? Anda perlu membayar kepada pemandu bas.');
+            }
+            return true;
+        }
+    
         <?php if (isset($_SESSION['title']) && $_SESSION['title'] != '') { ?>
             Swal.fire({
                 confirmButtonColor: '#5453a6',

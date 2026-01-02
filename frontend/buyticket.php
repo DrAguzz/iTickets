@@ -64,7 +64,7 @@ include('../backend/redirect.php');
 
                                                 if (mysqli_num_rows($checkBus) > 0) {
                                                 while ($fetchBus = mysqli_fetch_array($checkBus)) {
-                                                $getSoldTicket = mysqli_query($con, "SELECT COUNT(amount) AS sold_tickets FROM tickets WHERE id_vehicle = " . $fetchBus['id_vehicle']);
+                                                $getSoldTicket = mysqli_query($con, "SELECT COUNT(amount) AS sold_tickets FROM tickets WHERE id_vehicle = " . $fetchBus['id_vehicle'] . " AND status != '2'");
                                                 $fetchSoldTicket = mysqli_fetch_array($getSoldTicket);
                                                 ?>
                                                 <tr>
